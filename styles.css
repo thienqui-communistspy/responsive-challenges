@@ -31,7 +31,47 @@ aside {
   background: #333;
   color: #eee;
 }
-
+@media only screen and (min-width: 750px) {
+  .sidebar{
+    height: 100%;
+    width: 190px;
+    float: right;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 901px){
+  .sidebar ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sidebar ul li{
+    width: 50%;
+  }
+  }
+  .container{
+    max-width: 1000px;
+  }
+  @media only screen and (min-width: 500px){
+    body{
+     padding: 0px;
+    }
+  }
+  @media only screen and (min-width: 800px) and (max-width: 810px){
+    body{
+      transform-origin: center;
+      transition-duration: 5s;
+      transform: rotate(180deg);
+    }
+  }
+  @media print {
+    *{
+      background-color: blue;
+      color: yellow;
+    }
+  }
 /**
  * EXERCISE 1:
  * Try to make a right sidebar layout only when the screen
@@ -82,4 +122,3 @@ aside {
  * blue. Mwahahaha!
  */
 /* @media <condition?> {} */
-
